@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://ir4mxgaaw4mf"]
+
+[ext_resource type="Script" path="res://ball scene/area_2d.gd" id="1_duw04"]
+[ext_resource type="Texture2D" uid="uid://bnlls7ysya7ox" path="res://ball.png" id="2_hci13"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_oo6uk"]
+
+[node name="Area2D" type="Area2D"]
+script = ExtResource("1_duw04")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(576, 324)
+shape = SubResource("CircleShape2D_oo6uk")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(576, 324)
+scale = Vector2(0.00976563, 0.0162037)
+texture = ExtResource("2_hci13")
